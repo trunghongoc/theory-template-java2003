@@ -1,0 +1,26 @@
+.banner .menu>div:last-child ul.bar {
+    display: block;
+}
+.banner .menu>div:last-child ul:not(.bar) {
+    display: none;
+}
+.col-sm-12 {
+    display: flex;
+    flex: 0 0 100%;
+}
+.news .post>div {
+    padding: 0;
+}
+.news .post:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+}
+.news .post:not(:last-child) {
+    border-bottom: 1px solid #9a9a9a;
+    padding-bottom: 50px;
+}
+
+.news .post:not(:first-child) {
+    margin-top: 50px;
+}
